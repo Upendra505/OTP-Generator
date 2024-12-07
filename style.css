@@ -1,0 +1,182 @@
+/* General Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+}
+
+/* Form Styling */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input,
+.input-group select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #007bff;
+}
+
+/* Phone and OTP Styling */
+.phone-group {
+    display: flex;
+    gap: 8px;
+}
+
+.phone-group select {
+    width: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+button#get-otp {
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#get-otp:hover {
+    background-color: #0056b3;
+}
+
+/* Checkbox Styling */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+}
+
+/* Terms and Conditions */
+p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button Styling */
+button#submitBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#submitBtn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .image-container {
+        display: none;
+    }
+}
